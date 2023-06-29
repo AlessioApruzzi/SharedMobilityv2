@@ -1,8 +1,14 @@
 package com.treeschool.sharedmobility.sharedmobility.service;
 
-import lombok.Getter;
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-@Getter
+@EqualsAndHashCode(callSuper = true)
+@Entity
+@Data
+@NoArgsConstructor
 public class Bike extends Vehicle {
 
     public Bike(double rate, String position) {

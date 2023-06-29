@@ -1,8 +1,15 @@
 package com.treeschool.sharedmobility.sharedmobility.service;
 
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Getter
+@EqualsAndHashCode(callSuper = true)
+@Entity
+@Data
+@NoArgsConstructor
 public class ElectricScooter extends Vehicle {
 
     double batteryCapacity;

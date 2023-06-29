@@ -1,14 +1,18 @@
 package com.treeschool.sharedmobility.sharedmobility.service;
 
-import lombok.Getter;
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-@Getter
 
+@Entity
+@Data
+@NoArgsConstructor
 public class User {
     private String firstName;
     private String lastName;

@@ -1,14 +1,20 @@
 package com.treeschool.sharedmobility.sharedmobility.service;
 
-import lombok.Getter;
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-@Getter
+@EqualsAndHashCode(callSuper = true)
+@Entity
+@Data
+@NoArgsConstructor
 public class MotorizedVehicle extends Vehicle {
+
 
     private String licencePlate;
     private double fuel;
     private DrivingLicenseType drivingLicenseType;
-    //inserite l'enum della patente e relativi getter/setter
 
 
     public MotorizedVehicle(double rate, String position, String licencePlate) {
@@ -17,20 +23,8 @@ public class MotorizedVehicle extends Vehicle {
         fuel = 0;
     }
 
-    public void setDrivingLicenceType(DrivingLicenseType drivingLicenceType) {
-        this.drivingLicenseType = drivingLicenceType;
-    }
-
     public void addFuel(double fuel) {
         this.fuel += fuel;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + "MotorizedVehicle{" +
-                "licencePlate='" + licencePlate + '\'' +
-                ", fuel=" + fuel +
-                ", drivingLicenseType=" + drivingLicenseType +
-                '}';
-    }
 }
