@@ -1,9 +1,7 @@
-package com.treeschool.sharedmobility.sharedmobility.service;
-import jakarta.persistence.Entity;
+package com.treeschool.sharedmobility.sharedmobility.model;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 

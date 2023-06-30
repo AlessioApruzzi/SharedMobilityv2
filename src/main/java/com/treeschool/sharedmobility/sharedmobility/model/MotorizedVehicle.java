@@ -1,12 +1,9 @@
-package com.treeschool.sharedmobility.sharedmobility.service;
-
-import jakarta.persistence.Entity;
+package com.treeschool.sharedmobility.sharedmobility.model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
-@Entity
 @Data
 @NoArgsConstructor
 public class MotorizedVehicle extends Vehicle {

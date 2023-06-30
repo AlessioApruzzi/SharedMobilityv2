@@ -1,9 +1,8 @@
-package com.treeschool.sharedmobility.sharedmobility.service;
+package com.treeschool.sharedmobility.sharedmobility.model;
 
 import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)

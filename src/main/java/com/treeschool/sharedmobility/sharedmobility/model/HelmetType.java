@@ -1,4 +1,4 @@
-package com.treeschool.sharedmobility.sharedmobility.service;
+package com.treeschool.sharedmobility.sharedmobility.model;
 
 public enum HelmetType {
     NONE,    //Nessuno
